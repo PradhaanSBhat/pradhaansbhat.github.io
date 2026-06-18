@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300" role="img" aria-label="Paper teaser placeholder">
+  <rect width="480" height="300" fill="#7c3aed"/>
+  <polyline points="40,240 130,150 200,200 300,90 440,140" fill="none" stroke="#ffffff" stroke-width="6" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="130" cy="150" r="9" fill="#ffffff" opacity="0.85"/>
+  <circle cx="300" cy="90" r="9" fill="#ffffff" opacity="0.85"/>
+  <rect x="40" y="60" width="150" height="14" rx="7" fill="#ffffff" opacity="0.30"/>
+  <text x="240" y="278" font-family="monospace" font-size="14" fill="#ffffff" opacity="0.7" text-anchor="middle">teaser figure</text>
+</svg>

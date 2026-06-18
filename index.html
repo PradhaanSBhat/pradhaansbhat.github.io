@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pradhaan S Bhat — Predoctoral Researcher</title>
+  <meta name="description" content="Predoctoral researcher at IISc working on controllable image generation, spatial intelligence, and generative computer vision." />
+  <meta name="author" content="Pradhaan S Bhat" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pradhaansbhat.github.io/" />
+  <meta property="og:title" content="Pradhaan S Bhat — Predoctoral Researcher" />
+  <meta property="og:description" content="Predoctoral researcher at the Vision & AI Lab, Indian Institute of Science, working on generative computer vision." />
+  <meta property="og:image" content="https://pradhaansbhat.github.io/assets/portrait.jpeg" />
+  <meta property="og:image:alt" content="Pradhaan S Bhat" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@PradhaanSBhat" />
+  <meta name="twitter:creator" content="@PradhaanSBhat" />
+  <meta name="twitter:title" content="Pradhaan S Bhat — Predoctoral Researcher" />
+  <meta name="twitter:description" content="Predoctoral researcher at the Vision & AI Lab, Indian Institute of Science, working on generative computer vision." />
+  <meta name="twitter:image" content="https://pradhaansbhat.github.io/assets/portrait.jpeg" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#faf6f4" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#170f0e" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c0392b'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' fill='white' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E" />
+
+  <!-- Set theme before paint to avoid a flash of the wrong mode -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
+  <!-- Fonts: system stack renders instantly; web fonts swap in when ready -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Local stylesheet is the only render-blocking CSS, so the page paints fast.
+       Icons are inlined SVG (no webfont); only the display serif loads async. -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" />
+  </noscript>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Sticky navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <nav class="nav__links" id="navLinks" aria-label="Section navigation"></nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme"></button>
+        <button class="icon-btn nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false"></button>
+      </div>
+    </div>
+  </header>
+
+  <span id="top"></span>
+
+  <main id="main">
+    <!-- Sections are injected by script.js, in this order, when data exists -->
+    <section id="about"        class="section section--hero"></section>
+    <section id="news"         class="section"></section>
+    <section id="publications" class="section section--alt"></section>
+    <section id="talks"        class="section"></section>
+    <section id="awards"       class="section section--alt"></section>
+    <section id="teaching"     class="section"></section>
+  </main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <!-- Back to top -->
+  <button class="to-top" id="toTop" aria-label="Back to top"></button>
+
+  <!-- Publication detail modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Close"></button>
+      <!-- This wrapper scrolls; modal__panel itself stays a fixed frame so
+           decorative elements (e.g. the book binding) cover its full height. -->
+      <div class="modal__scroll">
+        <div class="modal__body" id="modalBody"></div>
+        <div class="modal__nav">
+          <button class="modal__navbtn" data-prev aria-label="Previous paper"></button>
+          <button class="modal__navbtn" data-next aria-label="Next paper"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
