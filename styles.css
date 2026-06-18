@@ -195,7 +195,7 @@ body::after {
 .hero__role .dot { color: var(--accent); margin: 0 4px; }
 .hero__bio { color: var(--ink-2); font-size: 18px; margin: 0 0 18px; }
 .hero__interests-text { color: var(--ink-2); font-size: 18px; margin: 0 0 16px; }
-.hero__interests { display: flex; flex-wrap: wrap; gap: 9px; margin: 0; }
+.hero__interests { display: flex; flex-wrap: nowrap; gap: 9px; margin: 0; overflow-x: auto; }
 .interest {
   display: inline-flex; align-items: center; gap: 7px;
   padding: 8px 14px; border-radius: 999px;
