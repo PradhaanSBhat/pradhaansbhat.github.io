@@ -93,15 +93,23 @@ from Objectron – the system generalizes to complex, in-the-wild real images. O
 method operates directly on real photographs and substantially outperforms recent
 state-of-the-art methods on large 3D edits.`,
       links: {
-        pdf:     "#",
-        arxiv:   "#",
+        pdf:     "https://arxiv.org/pdf/2606.20556",
+        arxiv:   "https://arxiv.org/abs/2606.20556",
         code:    "#",
-        project: "#",
+        project: "https://thinking-in-boxes.github.io",
         // The lightbox VIDEO is your presentation/talk video — different from the
         // `teaser` GIF above (which is the short demo shown on the card/spine/node).
         video:   "#"
       },
-      bibtex: ""
+      bibtex: `@misc{bhat2026thinkingboxes3dediting,
+      title={Thinking in Boxes: 3D Editing in Real Images Made Easy}, 
+      author={Pradhaan S Bhat and Naveen Chandra R and Rishubh Parihar and Vaibhav Vavilala and R. Venkatesh Babu and D. A. Forsyth and Anand Bhattad},
+      year={2026},
+      eprint={2606.20556},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2606.20556}, 
+}`
     },
 
     {
