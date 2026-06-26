@@ -501,7 +501,7 @@
   // Card teaser: just the image/GIF. (An earlier experiment had interactive
   // teaser widgets here — removed for now; may return as a different idea.)
   function teaserHTML(p) {
-    return '<img src="' + esc(p.teaser) + '" alt="" loading="lazy" />';
+    return '<img src="' + esc(p.teaser) + '" alt="" loading="lazy" style="width: 100%; height: 100%; object-fit: fill;">';
   }
 
   function pubCardHTML(p, i) {

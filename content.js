@@ -74,7 +74,7 @@ window.PORTFOLIO = {
       year: 2026,
       topic: ["Spatial Intelligence","Human-Aligned Generative Control"],
       highlight: "",  // example — set to "Oral" / "Best Paper" / null
-      teaser: "assets/teaser-1.svg",
+      teaser: "assets/teasers/thinking_in_boxes.gif",
       abstract: `Text and 2D-conditioning interfaces provide weak, ambiguous control over spatial
 transformations in image editing – particularly under large object motions and
 camera changes. Prior work has used 3D primitives such as boxes, but only as loose
@@ -99,7 +99,7 @@ state-of-the-art methods on large 3D edits.`,
         project: "https://thinking-in-boxes.github.io",
         // The lightbox VIDEO is your presentation/talk video — different from the
         // `teaser` GIF above (which is the short demo shown on the card/spine/node).
-        video:   "#"
+        video:   "assets/videos/thinking_in_boxes.mp4"
       },
       bibtex: `@misc{bhat2026thinkingboxes3dediting,
       title={Thinking in Boxes: 3D Editing in Real Images Made Easy}, 
@@ -140,15 +140,23 @@ state-of-the-art methods on large 3D edits.`,
       several conditional flow models, including multi-step and few-step text-to-image, depth-to-image, and reference 
       image generation.`,
       links: {
-        pdf:     "#",
-        arxiv:   "#",
+        pdf:     "https://arxiv.org/pdf/2606.27371",
+        arxiv:   "https://arxiv.org/abs/2606.27371",
         code:    "#",
-        project: "#",
+        project: "https://dont-settle-at-the-mode.github.io/",
         // The lightbox VIDEO is your presentation/talk video — different from the
         // `teaser` GIF above (which is the short demo shown on the card/spine/node).
         video:   "#"
       },
-      bibtex: ""
+      bibtex: `@misc{bhat2026dontsettlemodemitigating,
+      title={Don't Settle at the Mode! Mitigating Diversity Collapse in Pretrained Flow Models via Feature Self-Guidance}, 
+      author={Pradhaan S Bhat and Rishubh Parihar and Abhijnya Bhat and R. Venkatesh Babu},
+      year={2026},
+      eprint={2606.27371},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2606.27371}, 
+}`
     },
 
     {
